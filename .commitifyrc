@@ -1,0 +1,8 @@
+{
+    "types": [
+        {"value": "custom", "desc": "custom type"}
+    ],
+    "scopes": [
+        "custom"
+    ]
+}
