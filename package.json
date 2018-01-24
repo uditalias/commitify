@@ -1,0 +1,35 @@
+{
+  "name": "commitify",
+  "version": "0.0.1",
+  "description": "Easy git commit message with meaning",
+  "preferGlobal": true,
+  "bin": {
+    "commit": "bin/index"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "commit-message",
+    "cli-tool",
+    "git-workflow"
+  ],
+  "author": {
+    "name": "Udi Talias",
+    "email": "udi.talias@gmail.com",
+    "url": "https://github.com/uditalias"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uditalias/commitify/issues"
+  },
+  "homepage": "https://github.com/uditalias/commitify#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uditalias/commitify.git"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "fs-extra": "^5.0.0",
+    "inquirer": "^5.0.1"
+  }
+}
