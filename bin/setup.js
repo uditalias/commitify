@@ -9,7 +9,7 @@ module.exports = [
         type: "list",
         name: "type",
         message: "Choose commit type:",
-        choices: types.concat((rc.types || [])).map((type) => ({ name: `${type.value}: ${type.desc}`, value: type.value }))
+        choices: types.concat((rc.types || [])).map((type) => ({ name: type, value: type }))
     }, {
         type: "list",
         name: "scope",

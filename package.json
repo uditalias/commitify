@@ -1,6 +1,6 @@
 {
   "name": "commitify",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Easy git commit message with meaning",
   "preferGlobal": true,
   "bin": {
