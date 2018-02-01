@@ -7,8 +7,8 @@ const rc = loadRCFile();
 module.exports = [
     {
         type: "confirm",
-        name: "addFlag",
-        message: "Do you want to add git changes before commit?",
+        name: "gitAdd",
+        message: "Do you want to add changes before commit (`git add .`)?",
         default: true
     }, {
         type: "list",
