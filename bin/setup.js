@@ -6,6 +6,11 @@ const rc = loadRCFile();
 
 module.exports = [
     {
+        type: "confirm",
+        name: "addFlag",
+        message: "Do you want to add git changes before commit?",
+        default: true
+    }, {
         type: "list",
         name: "type",
         message: "Choose commit type:",
@@ -20,5 +25,10 @@ module.exports = [
         name: "message",
         message: "Enter commit message:",
         default: "i am too lazy"
+    }, {
+        type: "confirm",
+        name: "gitPush",
+        message: "Do you want to push your commit?",
+        default: true
     }
 ];
