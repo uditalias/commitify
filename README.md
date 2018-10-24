@@ -1,7 +1,7 @@
 ## **Commitify**
+[![npm version](https://badge.fury.io/js/commitify.svg)](https://badge.fury.io/js/commitify)
 
 ### Easy git commit message with meaning
-[![npm version](https://badge.fury.io/js/commitify.svg)](https://badge.fury.io/js/commitify)
 #
 
 #### Install

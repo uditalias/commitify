@@ -1,8 +1,24 @@
 {
     "types": [
-        "custom"
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore",
+        "upgrade",
+        "update"
     ],
     "scopes": [
-        "custom"
+        "client",
+        "server",
+        "controller",
+        "manager",
+        "service",
+        "provider",
+        "config",
+        "module",
+        "component"
     ]
 }

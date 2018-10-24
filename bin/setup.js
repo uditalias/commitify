@@ -1,8 +1,11 @@
-const { loadRCFile } = require("./utils");
-const types = require("./types");
-const scopes = require("./scopes");
+const path = require("path");
+const { loadRCFile, uniqe, RC_FILE_NAME } = require("./utils");
 
-const rc = loadRCFile();
+const globalRC = loadRCFile(path.resolve(__dirname, "..", RC_FILE_NAME));
+const localRC = loadRCFile();
+
+const types = uniqe(globalRC.types, localRC.types);
+const scopes = uniqe(globalRC.scopes, localRC.scopes);
 
 module.exports = [
     {
@@ -14,12 +17,12 @@ module.exports = [
         type: "list",
         name: "type",
         message: "Choose commit type:",
-        choices: types.concat((rc.types || [])).map((type) => ({ name: type, value: type }))
+        choices: types.map((type) => ({ name: type, value: type }))
     }, {
         type: "list",
         name: "scope",
         message: "Choose commit scope:",
-        choices: scopes.concat((rc.scopes || [])).map((scope) => ({ name: scope, value: scope }))
+        choices: scopes.map((scope) => ({ name: scope, value: scope }))
     }, {
         type: "input",
         name: "message",
